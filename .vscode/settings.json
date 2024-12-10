@@ -3,4 +3,8 @@
   "java.project.outputPath": "bin",
   "java.project.referencedLibraries": [ "lib/**/*.jar" ],
   "java.autobuild.enabled": true,
+  "cSpell.words": [
+    "Exerc",
+    "mstk"
+  ],
 }

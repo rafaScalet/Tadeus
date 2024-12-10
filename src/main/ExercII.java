@@ -3,7 +3,7 @@ package main;
 import java.util.Scanner;
 
 public class ExercII {
-public static void main(String[] args) {
+  public static void main(String[] args) {
     ListaLinearSimples lld = new ListaLinearSimples();
     Scanner in = new Scanner(System.in);
     int strSize = 3;

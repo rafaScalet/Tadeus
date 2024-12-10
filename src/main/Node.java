@@ -4,17 +4,20 @@ public class Node {
   private String id;
   private Object value;
   private Node next;
+  private Node prev;
 
   public Node () {
     this.id = "";
-    this.next = null;
     this.value = null;
+    this.next = null;
+    this.prev = null;
   }
 
   public Node (String id, Object value) {
     this.id = id;
     this.value = value;
     this.next = null;
+    this.prev = null;
   }
 
   public String getId() {
@@ -39,5 +42,13 @@ public class Node {
 
   public void setNext(Node next) {
     this.next = next;
+  }
+
+  public Node getPrev() {
+    return prev;
+  }
+
+  public void setPrev(Node prev) {
+    this.prev = prev;
   }
 }

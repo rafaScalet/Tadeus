@@ -9,3 +9,7 @@ echo "Exercicio 1: \n"
 echo "\nExercicio 2: \n"
 
 ./exercII.sh
+
+echo "\nExercicio 3: \n"
+
+./exercIII.sh
