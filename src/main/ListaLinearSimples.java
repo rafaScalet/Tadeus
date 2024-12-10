@@ -47,6 +47,29 @@ public class ListaLinearSimples{
     this.size++;
   }
 
+  public void insertInOrd (Node node) {
+    if(this.empty()) {
+      this.add(node);
+      return;
+    }
+
+    if(node.getId().compareTo(this.top.getId()) <= 0) {
+      node.setNext(this.top);
+      this.top = node;
+      this.size++;
+      return;
+    }
+
+    Node current = this.top;
+    while (current.getNext() != null && current.getNext().getId().compareTo(node.getId()) < 0) {
+      current = current.getNext();
+    }
+
+    node.setNext(current.getNext());
+    current.setNext(node);
+    this.size++;
+  }
+
   public Node remove() {
     Node temp = null;
 

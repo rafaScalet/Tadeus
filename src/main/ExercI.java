@@ -2,7 +2,7 @@ package main;
 
 import java.util.Scanner;
 
-public class Main {
+public class ExercI {
   public static void main(String[] args) {
     ListaLinearSimples list = new ListaLinearSimples();
     Scanner in = new Scanner(System.in);
